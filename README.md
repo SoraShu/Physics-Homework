@@ -7,7 +7,8 @@
 
 建立本仓库的原意是作为之前上传的习题解答的补充。~~储存作业只是顺便~~  
 相当于习题解答勘误加详解吧。  
-文件夹中的.md文件用于在github上直接查看，下载查看可选pdf文件。  
+~~文件夹中的.md文件用于在github上直接查看，下载查看可选pdf文件。~~  
+直接查看和下载查看都请查看pdf文件吧，github并不支持KaTex渲染，大意了。可以看看想看看如何手敲作业的可以瞧瞧.md文件。    
 **:warning:请勿抄袭！**
 
 ## 作业  
@@ -30,4 +31,24 @@
 例：`<img src=1_12.png width="30%">`其中`1_12.png`是图片的绝对或相对路径，`30%`是图片比例。
 5. markdown编辑器无推荐，只要支持数学编辑，有实时预览或者预览加同步滚动就行。同时由于提交需要，注意是否支持生成pdf文件。喜欢同一窗口实时预览的可以使用Typora，不追求实时预览可以使用vscode，并推荐安装插件:   
    1. Markdowm All in One：提供markdown的基本支持，支持生成书签，支持使用快捷键`ctrl+M`进行行间公式插入，连按两次`ctrl+M`进行行内公式插入。
-   2. Markdown Preview Enhanced：原用于增强预览功能，但我主要馋它可以利用Chrome浏览器将markdown文件打印成pdf。同时它集成了很多小功能，详见[Markdown Preview Enhanced 中文文档](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/)。
+   2. Markdown Preview Enhanced：原用于增强预览功能，但我主要馋它可以利用Chrome浏览器将markdown文件打印成pdf。同时它集成了很多小功能，详见[Markdown Preview Enhanced 中文文档](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/)。  
+
+补充：一般来说使用MathJax进行数学公式渲染足矣，但如果喜欢使用LaTex的一些特性请使用KaTex进行渲染。(已知vscode的上述两款插件默认使用KaTex进行数学公式渲染，Typora不清楚)。这些特性包括：  
+```markdown
+$$
+\begin{aligned}
+    a&=\sqrt{a_t^2+a_n^2}\\
+    &=\sqrt{b^2+a_n^2}
+\end{aligned}
+$$
+```
+使公式对齐，或：  
+```markdown
+$$
+\begin{cases}
+    a_t=\dot{v}=-b\\
+    a_n=v^2/R=(v_0-bt)^2/R
+\end{cases}
+$$  
+```
+将公式用大括号括起来。
